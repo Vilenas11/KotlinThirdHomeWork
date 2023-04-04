@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232F34"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/task01TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="Task 01"
+        android:textColor="#F9AA33"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/task02TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/task02TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="Task 02"
+        android:textColor="#F9AA33"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/task03TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task01TextView"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/task03TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="Task 03"
+        android:textColor="#F9AA33"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/clickMeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task02TextView"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/clickMeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#4A6572"
+        android:backgroundTintMode="screen"
+        android:text="Click me!"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
